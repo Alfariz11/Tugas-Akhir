@@ -7,7 +7,7 @@ Kontributor: Radhinka Bagaskara, Martin C.T. Manullang, I Wayan Wiprayoga Wisesa
 
 ## Apakah ini?
 
-Proyek ini bertujuan untuk membuat template Tugas Akhir Teknik Informatika ITERA berbasis LaTex. Template dibuat berdasarkan template [Pedoman Tugas Akhir Format Terbaru (UNESCO)]https://docs.google.com/document/d/1m2WutVlV-NSbEeZUKMPsThl__LI8m_bd), serta berdasarkan [Templat LaTeX Tesis Informatika ITB](https://github.com/petrabarus/if-itb-latex) oleh Petra Barus & Peb Ruswono Aryan.
+Proyek ini bertujuan untuk membuat template Tugas Akhir Teknik Informatika ITERA berbasis LaTex. Template dibuat berdasarkan template [Pedoman Tugas Akhir Format Terbaru (UNESCO)](https://docs.google.com/document/d/1m2WutVlV-NSbEeZUKMPsThl__LI8m_bd), serta berdasarkan [Templat LaTeX Tesis Informatika ITB](https://github.com/petrabarus/if-itb-latex) oleh Petra Barus & Peb Ruswono Aryan.
 
 ## Mengapa memakai LaTex?
 
