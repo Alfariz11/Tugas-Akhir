@@ -1,4 +1,11 @@
-\contentsline {myequations}{\numberline {Rumus~2.1} Rumus sederhana }{9}{equation.2.1}%
-\contentsline {myequations}{\numberline {Rumus~2.2} Mean Absolute Error (MAE) }{9}{equation.2.2}%
-\contentsline {myequations}{\numberline {Rumus~2.3} Distribusi Normal }{10}{equation.2.3}%
-\contentsline {myequations}{\numberline {Rumus~2.4} Sistem persamaan linier }{10}{equation.2.4}%
+\contentsline {myequations}{\numberline {Rumus~2.1} Imbalance Ratio (IR) }{11}{equation.2.1}%
+\contentsline {myequations}{\numberline {Rumus~2.2} Pembentukan Sampel Sintetis SMOTE }{13}{equation.2.2}%
+\contentsline {myequations}{\numberline {Rumus~2.3} Distribusi Bobot ADASYN }{16}{equation.2.3}%
+\contentsline {myequations}{\numberline {Rumus~2.4} Fungsi Keputusan SVM }{22}{equation.2.4}%
+\contentsline {myequations}{\numberline {Rumus~2.5} Kernel Linear }{23}{equation.2.5}%
+\contentsline {myequations}{\numberline {Rumus~2.6} Kernel Polynomial }{23}{equation.2.6}%
+\contentsline {myequations}{\numberline {Rumus~2.7} Kernel RBF }{24}{equation.2.7}%
+\contentsline {myequations}{\numberline {Rumus~2.8} Recall (Sensitivity) }{26}{equation.2.8}%
+\contentsline {myequations}{\numberline {Rumus~2.9} Precision }{27}{equation.2.9}%
+\contentsline {myequations}{\numberline {Rumus~2.10} G-mean (Geometric Mean) }{28}{equation.2.10}%
+\contentsline {myequations}{\numberline {Rumus~2.11} True Positive Rate dan False Positive Rate }{29}{equation.2.11}%

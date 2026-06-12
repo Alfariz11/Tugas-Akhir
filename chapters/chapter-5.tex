@@ -2,7 +2,20 @@
 \chapter{KESIMPULAN DAN SARAN} \label{Bab V}
 
 \section{Kesimpulan} \label{V.Kesimpulan}
-Berisi kesimpulan dari hasil dan pembahasan terkait penelitian yang dilakukan, dapat juga berupa temuan yang Anda dapatkan setelah melakukan penelitian atau analisis terhadap tugas akhir Anda. Memberikan jawaban dari poin pada subbab \nameref{I.Rumusan Masalah} dan \nameref{I.Tujuan}. \par
+Berdasarkan hasil eksperimen dan analisis yang telah dilakukan terhadap metode HOUM pada empat dataset dengan tingkat ketidakseimbangan yang berbeda, diperoleh kesimpulan sebagai berikut:
+\begin{enumerate}
+    \item Penerapan teknik \textit{oversampling} yang berbeda pada metode HOUM menghasilkan dampak yang beragam terhadap kinerja klasifikasi, sehingga tidak ditemukan satu teknik yang unggul pada seluruh kondisi. Safe-Level SMOTE secara konsisten meningkatkan deteksi kelas minoritas pada dataset dengan fitur terbatas dan tumpang tindih tinggi (Haberman dan Transfusion) karena menempatkan data sintetis di area yang aman dan tidak tumpang tindih dengan kelas mayoritas. ADASYN unggul pada dataset dengan jumlah fitur memadai dan batas kelas yang lebih jelas, sebagaimana terlihat pada Diabetes (G-Mean 0,7401) dan Glass5 (G-Mean 0,9877), di mana fokus ADASYN pada area batas keputusan memperkuat pemisahan kelas. Pada Glass5 dengan ketidakseimbangan ekstrem (IR 1:22,78, 9 sampel minoritas), HOUM-ADASYN mencapai \textit{Recall} 1,0000 dan ROC-AUC 1,0000, melampaui HOUM-SLSMOTE (G-Mean 0,9753). Pemilihan teknik \textit{oversampling} pada HOUM perlu disesuaikan dengan karakteristik dataset, terutama jumlah fitur dan tingkat tumpang tindih antar kelas.
+
+    \item Variasi nilai parameter regularisasi ($C$) dan jenis kernel SVM terbukti berpengaruh terhadap kinerja metode HOUM, meskipun tingkat pengaruhnya bergantung pada karakteristik dataset. Nilai $C$ rendah (0,5) optimal untuk Diabetes dan Haberman karena menghasilkan \textit{margin} lebar dan \textit{undersampling} yang efektif. Pada Transfusion dengan ketidakseimbangan lebih tinggi, diperlukan $C=2$ untuk keseimbangan optimal antara \textit{Recall} dan \textit{Precision}. Pada Glass5, variasi $C$ tidak memengaruhi hasil klasifikasi karena jumlah sampel minoritas yang sedikit. Pemilihan kernel bergantung pada dimensi dataset, kernel RBF sesuai untuk data berdimensi tinggi (Diabetes, 8 fitur), kernel Linear memadai untuk data berdimensi rendah (Haberman, Transfusion) dan pada Glass5 dengan HOUM-ADASYN seluruh kernel menghasilkan metrik identik. Kernel Polynomial tidak direkomendasikan karena secara konsisten mencatat performa terendah pada seluruh dataset.
+\end{enumerate}
 
 \section{Saran} \label{V.Saran}
-Berisi saran mengenai aspek tugas akhir atau temuan yang dapat dikembangkan dan diperkaya di tugas akhir selanjutnya. Saran dapat berkaitan erat pada subbab \nameref{IV.Analisis}. \par
+Berdasarkan hasil penelitian yang telah dilakukan, terdapat beberapa saran untuk pengembangan penelitian selanjutnya:
+\begin{enumerate}
+    \item Menggunakan dataset dengan dimensi fitur lebih tinggi dan kompleksitas lebih beragam untuk menguji konsistensi kernel RBF pada ruang fitur berdimensi tinggi.
+    \item Memperluas rentang nilai $C$ ke bawah 0,5 untuk menganalisis pengaruh \textit{margin} yang lebih longgar terhadap proses \textit{undersampling}.
+    \item Membandingkan teknik \textit{oversampling} lain seperti \textit{Borderline-SMOTE} dengan Safe-Level SMOTE dan ADASYN dalam kerangka HOUM.
+    \item Menguji HOUM dengan algoritma klasifikasi lain seperti \textit{Gradient Boosting} atau \textit{Neural Network} untuk mengukur konsistensi peningkatan performa di berbagai model.
+    \item Mengeksplorasi parameter tambahan SVM seperti \textit{gamma} pada kernel RBF untuk mengoptimalkan \textit{undersampling}.
+    \item Menambah jumlah dan variasi rasio ketidakseimbangan dataset untuk mengevaluasi generalisasi HOUM secara lebih menyeluruh.
+\end{enumerate}
