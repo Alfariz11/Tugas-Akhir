@@ -417,3 +417,15 @@
 
 \makeatother % Jangan dihapus
 
+% Frame outline 1pt pada gambar (hanya aktif di Bab 1-5)
+\usepackage{letltxmacro}
+\newif\ifframedimages
+\framedimagesfalse % Default: tanpa frame
+\LetLtxMacro{\origincludegraphics}{\includegraphics}
+\renewcommand{\includegraphics}[2][]{%
+  \ifframedimages
+    {\setlength{\fboxsep}{0pt}\setlength{\fboxrule}{1pt}\fbox{\origincludegraphics[#1]{#2}}}%
+  \else
+    \origincludegraphics[#1]{#2}%
+  \fi
+}
